@@ -49,14 +49,8 @@ input,textarea,select {
 .wrap_box{
 	width: 100%;
 }
-.content_box{
-	position: relative;
-	margin: 0 auto;
-	width: 1200px;
-	/*background: red;*/
-}
 .cl{
-	height:5px;
+	height:10px;
 	visibility: hidden;
 	overflow:hidden;
 	clear:both;
@@ -64,7 +58,7 @@ input,textarea,select {
 /*节日背景*/
 #Festive{
 	clear:both;
-	width:1200px;
+	width:1190px;
 	height:100px;
 	margin:0 auto;
 	overflow:hidden;
@@ -84,7 +78,7 @@ input,textarea,select {
 	display:block;
 	position: absolute;
 	top: 30px;
-	width: 1200px;
+	width: 1190px;
 	height: 100px;
 	text-align: center;
 	font-size: 36px;
