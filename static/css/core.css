@@ -1,7 +1,7 @@
 html,body {
 	height: 100%;
 	font-size: 14px;
-	font-family: "Microsoft yahei","Century Gothic";
+	font-family: "Microsoft yahei","Century Gothic",Arial, sans-serif; 
 }
 body,p,h1,h2,h3,h4,h5,h6,
 dl,dt,dd,ul,ol,li,
@@ -18,19 +18,20 @@ img {
 }
 a{
 	text-decoration: none;
-	color: #007200;
+	color: #333333;
 }
 a:hover{
 	text-decoration: underline;
+	color: #000000;
 }
 a:visited{
-	color: #007200;
+	color: #333333;
 }
 input,textarea,select {
 	font-size: 100%;
 	outline: 0;
-	resize: none;
-	font-family: "Microsoft yahei";
+	/*resize: none;*/
+	font-family: "Microsoft yahei",Arial,sans-serif; 
 }
 #wrap {
 	min-height: 100%;
@@ -58,7 +59,7 @@ input,textarea,select {
 /*节日背景*/
 #Festive{
 	clear:both;
-	width:1190px;
+	width:1200px;
 	height:100px;
 	margin:0 auto;
 	overflow:hidden;
@@ -78,13 +79,19 @@ input,textarea,select {
 	display:block;
 	position: absolute;
 	top: 30px;
-	width: 1190px;
+	width: 1200px;
 	height: 100px;
 	text-align: center;
 	font-size: 36px;
 	line-height: 36px;
 	color: yellow;
 	font-weight: 600;
+}
+.separator{
+	height:1px;
+	border-bottom:1px solid #e4e4e4;
+	content: " ";
+	clear: both;
 }
 .fixed_left{
 	width:30px;
@@ -103,3 +110,422 @@ input,textarea,select {
 	background:red;
 }
 /*头部开始*/
+#top{
+	position: relative;
+	height: 40px;
+	border-bottom: 2px solid #E4E4E4;
+	line-height: 40px;
+}
+#top .brand a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+#top .brand a.school_name{
+	display: block;
+	float: left;
+	font-size: 18px;
+	color: #007200;
+	font-weight: 400;
+}
+#top .brand p{
+	display: block;
+	float: right;
+	width:400px;
+}
+#top .brand p a{
+	display: block;
+	text-align: center;
+	float: right;
+	color: #007200;
+	height: 40px;
+	width: 80px;
+}
+#top .brand p a:hover{
+	background: #FFCC00;
+}
+#top .brand p a:visited{
+	color: #007200;
+}
+/*头部结束*/
+/*大图轮播*/
+#slider_box{
+	height:400px;
+	border-bottom: 2px solid #E4E4E4;
+}
+#slider{
+	position: relative;
+	height:400px;
+	background: url(./images/new_design/1.jpg) no-repeat;
+}
+#slider ul.slider_img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 400px;
+	width: 1190px;
+}
+#slider ul.slider_img li{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 400px;
+	width: 1190px;
+	display: none;
+}
+#slider ul.focus_pic{
+	position: absolute;
+	top: 328px;
+	left: 0px;
+	height: 60px;
+	width: 1190px;
+	z-index: 4;
+}
+#slider ul.focus_pic li{
+	float: left;
+	display: block;
+	height: 60px;
+	width: 120px;
+	margin-left: 10px;
+	border: 1px solid #4E4E4E;
+}
+#slider ul.focus_pic li.hover{
+	border: 2px solid #FFCC00;
+	margin-right: -2px;
+	margin-top: -6px;
+}
+#slider ul.focus_pic li a{
+	display: block;
+	position: relative;
+}
+#slider ul.focus_pic li a img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#slider div.slider_title{
+	position: absolute;
+	top: 280px;
+	left: 10px;
+	width: 1000px;
+}
+#slider div.slider_title a{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 24px;
+	font-weight: 600;
+}
+#slider div.slider_title a:hover{
+	text-decoration: none;
+	color: #FFCC00;
+}
+/*大图轮播*/
+/*导航开始*/
+ul.nav_ul li a{
+	display:block;
+	height:30px;
+	text-align:center;
+	border-bottom:3px solid #E4E4E4;
+	line-height:30px;
+}
+ul.nav_ul li a:hover{
+	background: #FFCC00;
+	color: #007200;
+	border-bottom: 3px solid #FFCC00;
+	text-decoration: none;
+}
+/*导航结束*/
+/*首页内容区*/
+.focus_title{
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #007200;
+	font-weight: 400;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #E4E4E4;
+}
+.column_box{
+	height: 185px;
+}
+.column_box .column_content{
+	height: 185px;
+	margin-right:20px;
+	margin-bottom:10px;
+}
+.column_box .column_content_right{
+	height: 185px;
+	margin-bottom:10px;
+	margin-right: 0px;
+}
+.content{
+	height: 185px;
+	border: 1px solid #E4E4E4;
+}
+.content .column_header{
+	position: relative;
+	color: #007200;
+	font-weight: 400;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #E4E4E4;
+}
+.content .column_header a.title{
+	display: block;
+	position: absolute;
+	height: 30px;
+	line-height: 30px;
+	left: 10px;
+	width: 290px;
+	color: #007200;
+}
+.content .column_header a.more{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	width: 38px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.content .column_header a.more img{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.content .news_content{
+	position: relative;
+	height: 155px;
+}
+.content .news_content ul li{
+	position: relative;
+	height: 25px;
+	line-height: 25px;
+	display: block;
+	background: url(./images/new_design/ico-2.gif) 8px 10px no-repeat;
+}
+.content .news_content ul li a.news_header{
+	display: block;
+	position: absolute;
+	height: 25px;
+	line-height: 25px;
+	left: 15px;
+	width: 285px;
+	font-size: 12px;
+	overflow: hidden;
+}
+.content .news_content ul li span.news_addtime{
+	display: block;
+	width: 70px;
+	position: absolute;
+	height: 25px;
+	line-height: 25px;
+	right: 5px;
+	font-size: 12px;
+	color: #666666;
+}
+/*首页内容区*/
+/*最新信息*/
+#flash_slider_box{
+	height:340px;
+	overflow:hidden;
+}
+#flash_slider_box #newest_news .focus_title{
+	width: 450px;
+	margin-bottom: 3px;
+}
+#flash_slider_box #newest_news .newest_news{
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	padding-left:10px;
+	padding-right:10px;
+	overflow: hidden;
+}
+#flash_slider_box #newest_news .newest_news p.news_title{
+	position: relative;
+	width: 380px;
+	text-indent: 8px;
+	overflow: hidden;
+	background: url(./images/new_design/ico-2.gif) 0px 13px no-repeat;
+}
+#flash_slider_box #newest_news .newest_news p.news_time{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 95px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #666666;
+	text-align: right;
+}
+/*最新信息*/
+/*通知公告*/
+#flash_slider_box #notice_news{
+	height: 330px;
+	overflow: hidden;
+}
+#flash_slider_box #notice_news .focus_title{
+	margin-bottom: 3px;
+}
+#flash_slider_box #notice_news .notice_div{
+	padding-left: 10px;
+	height: 300px;
+	overflow: hidden;
+}
+#flash_slider_box #notice_news .notice_div ul{
+	margin-top: 5px;
+	height: 300px;
+	overflow: hidden;
+}
+#flash_slider_box #notice_news .notice_div ul li{
+	position: relative;
+	display: block;
+	height: 50px;
+	overflow: hidden;
+}
+#flash_slider_box #notice_news .notice_div ul li span.notice_time{
+	display: block;
+	position: absolute;
+	top: 23px;
+	right: 0px;
+	font-size: 12px;
+	color: #666666;
+}
+/*通知公告*/
+/*领导职务*/
+.zhiwu{font-size: 20px;font-weight: bold;}
+.zhiwu span{color:green;font-size: 24px;}
+/*领导职务*/
+/*职教简报*/
+.zhijiaoback{
+	margin: 0 auto;
+	position:relative;
+	text-align: center;
+	width:760px;
+	height:230px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	margin-left:110px;
+	background: url('http://www.ahqszz.com/images/zhijiaojianbaoback.jpg');
+}
+.zhijiaoback .qishu{
+	display: block;
+	position:relative;
+	padding-top: 105px;
+}
+.zhijiaoback .shijian{
+	float: right;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+/*职教简报*/
+/*文件头*/
+.wenjian_back{
+	position:relative;
+	text-align:center;	
+	width:800px;
+	height:474px;
+	margin:0 auto;
+	margin-left:90px;
+	background: url('http://www.ahqszz.com/images/zongzhi_back.jpg') no-repeat;
+}
+.wenjian_back .wenjian_num{
+	position:absolute;
+	top:330px;
+	left:270px;
+	font-weight: 400;
+	font-size: 22px;
+}
+.xuexiao_back{
+	position:relative;
+	text-align:center;	
+	width:800px;
+	height:474px;
+	margin:0 auto;
+	margin-left:90px;
+	background: url('http://www.ahqszz.com/images/wenjian_back.jpg') no-repeat;
+}
+.xuexiao_back .wenjian_num{
+	position:absolute;
+	top:330px;
+	left:270px;
+	font-weight: 400;
+	font-size: 22px;
+}
+/*文件头*/
+/*教育实践活动*/
+.shijian_box{
+	position: relative;
+	margin: 0 auto;
+	width:960px;
+	height:300px;
+	font-size: 20px;
+}
+.shijian_box span{
+	position: absolute;
+	width:960px;
+	left:0px;
+	bottom:0px;
+	display:block;
+	height:3px;
+	border-bottom:3px dotted #FF00FF;
+}
+.shijian_box .shijian_date{
+	position: absolute;
+	right:0px;
+	top:245px;
+	width:180px;
+	text-align: center;
+}
+.shijian_box .shijian_author{
+	position: absolute;
+	left:10px;
+	top: 215px;
+	line-height: 30px;
+}
+.shijian_box .shijian_bianying{
+	position: absolute;
+	left:220px;
+	top: 230px;
+	line-height: 30px;
+}
+.shijian_box .shijian_title{
+	position: absolute;
+	top: 60px;
+	left:195px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 70px;
+	color: #FF00FF;
+}
+.shijian_box .shijian_num{
+	position: absolute;
+	top: 155px;
+	left: 420px;
+	color: #FF00FF;
+	font-size: 24px;
+}
+/*教育实践活动*/
+/*文章内容*/
+.article_box{
+	width:960px;
+	position: relative;
+	margin: 0 auto;
+	height: auto;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.article_box .article_title{
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+}
+.article_box .article_content p{
+	text-indent:40px;
+}
+/*文章内容*/

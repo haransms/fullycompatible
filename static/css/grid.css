@@ -934,6 +934,6 @@ body {
 .clearfix:after {
   clear: both;
 }
-.clearfix {
+/*.clearfix {
   zoom: 1;
-}
+}*/
